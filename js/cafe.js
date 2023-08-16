@@ -155,13 +155,7 @@
             is_visible: true,
             color: '#65c36d'
           }).showProgress();
-        } else {
-          mainButton.setParams({
-            is_visible: !!Cafe.canPay,
-            text: 'PAY ' + Cafe.formatPrice(Cafe.totalPrice),
-            color: '#31b545'
-          }).hideProgress();
-        }
+        } 
       } else {
         mainButton.setParams({
           is_visible: !!Cafe.canPay,
